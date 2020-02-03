@@ -1,0 +1,127 @@
+<!--vinoya21 hw2-->
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="stylesheets/vinoya21_hw2.css"/>
+  <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+  <script
+    src="javascripts/events.js"> 
+    </script>
+
+<style>
+.dropbtn {
+  background-color: magenta;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.scroll {
+  overflow-y: scroll;
+  height: 100px;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+  
+</head>
+<body>
+
+<h1 style="font-family:verdana">Cheesecake Order Form</h1>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg" width="200" height="200">
+
+
+<p style="font-family:arial" id="text1">
+
+Quantity Topping </p>
+<table>
+ <tr>
+    
+<td>
+<select>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+</select>
+</td>
+
+<td>
+<form style="display: inline-block;">
+  <input type="radio" name="option" value="Plain" checked> Plain<br>
+  <input type="radio" name="option" value="Cherry"> Cherry<br>
+  <input type="radio" name="option" value="Chocolate"> Chocolate 
+</form>
+</td>
+
+
+</tr>
+</table>
+<p id="text2">
+  Notes:
+<p/>
+
+<textarea rows="7" cols="50" placeholder="Enter any special instructions here.">
+</textarea>
+<br/>
+
+<button id="order" type="button">Order</button>
+
+<!-dropdown menu with months-->
+
+<h3 style="font-family:verdana">Orders for
+<div class="dropdown">
+  <button id="dropbtn" class="dropbtn">Jan</button>
+  <div class="dropdown-content scroll">
+    <a id="jan">Jan</a>
+    <a id="feb">Feb</a>
+    <a id="mar">Mar</a>
+    <a id="apr">Apr</a>
+    <a id="may">May</a>
+    <a id="jun">Jun</a>
+    <a id="jul">Jul</a>
+    <a id="aug">Aug</a>
+    <a id="sep">Sep</a>
+    <a id="oct">Oct</a>
+    <a id="nov">Nov</a>
+    <a id="dec">Dec</a>
+  </div>
+</div>
+</h3>
+
+<ul>
+  <li>11 cherry</li>
+  <li>17 chocolate</li>
+  <li>31 plain</li>
+</ul>
+
+</body>
+</html>
